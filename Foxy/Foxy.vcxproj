@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Dist|x64">
+      <Configuration>Dist</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{2B5A857C-1791-860D-C07D-6C10AC93020F}</ProjectGuid>
+    <IgnoreWarnCompileDuplicatedFilename>true</IgnoreWarnCompileDuplicatedFilename>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Foxy</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>..\bin\Debug\</OutDir>
+    <IntDir>..\bin\int\Debug\Foxy\</IntDir>
+    <TargetName>Foxy</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <LibraryPath>$(SolutionDir)bin\$(Configuration)\lib;$(SolutionDir)Foxy\src\Discord\Library\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>false</IgnoreImportLibrary>
+    <OutDir>..\bin\Release\</OutDir>
+    <IntDir>..\bin\int\Release\Foxy\</IntDir>
+    <TargetName>Foxy</TargetName>
+    <TargetExt>.dll</TargetExt>
+    <LibraryPath>$(SolutionDir)bin\$(Configuration)\lib;$(SolutionDir)Foxy\src\Discord\Library\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IgnoreImportLibrary>true</IgnoreImportLibrary>
+    <OutDir>..\bin\Dist\</OutDir>
+    <IntDir>..\bin\int\Dist\Foxy\</IntDir>
+    <TargetName>Foxy</TargetName>
+    <TargetExt>.dll</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DisableSpecificWarnings>4100;4201;4307;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x601;_DEBUG;BIGBASEV2_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\vendor\directx\Inc;..\vendor\luac;..\vendor\sol2\include;..\vendor\json\single_include;..\vendor\MinHook\include;..\vendor\ImGui;..\vendor\ImGui\backends;..\vendor\StackWalker\Main\StackWalker;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\bin\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\bin\Debug\Foxy.lib</ImportLibrary>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;d3d11.lib;urlmon.lib;wininet.lib;ws2_32.lib;winmm.lib;normaliz.lib;wldap32.lib;advapi32.lib;crypt32.lib;Zydis.lib;libcurl.lib;discord-rpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <DisableSpecificWarnings>4100;4201;4307;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x601;NDEBUG;BIGBASEV2_RELEASE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\vendor\directx\Inc;..\vendor\luac;..\vendor\sol2\include;..\vendor\json\single_include;..\vendor\MinHook\include;..\vendor\ImGui;..\vendor\ImGui\backends;..\vendor\StackWalker\Main\StackWalker;..\vendor\zydis\include;..\vendor\zydis\dependencies\zycore\include;..\vendor\curl\include\curl;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <ControlFlowGuard>Guard</ControlFlowGuard>
+      <ConformanceMode>false</ConformanceMode>
+      <PrecompiledHeaderFile>Common.hpp</PrecompiledHeaderFile>
+      <CallingConvention>FastCall</CallingConvention>
+      <CompileAs>Default</CompileAs>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableParallelCodeGeneration>true</EnableParallelCodeGeneration>
+      <RuntimeTypeInfo>false</RuntimeTypeInfo>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+      <LanguageStandard_C>stdc17</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\bin\lib\Release;src\DiscordRPC\Library\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\bin\Release\Foxy.lib</ImportLibrary>
+      <GenerateMapFile>false</GenerateMapFile>
+      <LinkStatus>false</LinkStatus>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <MapExports>false</MapExports>
+      <LargeAddressAware>true</LargeAddressAware>
+      <LinkTimeCodeGeneration>Default</LinkTimeCodeGeneration>
+      <Profile>false</Profile>
+      <AdditionalDependencies>kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;d3d11.lib;urlmon.lib;wininet.lib;ws2_32.lib;winmm.lib;normaliz.lib;wldap32.lib;advapi32.lib;crypt32.lib;Zydis.lib;libcurl.lib;discord-rpc.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalOptions>/bigobj %(AdditionalOptions)</AdditionalOptions>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Dist|x64'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4100;4201;4307;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;NOMINMAX;WIN32_LEAN_AND_MEAN;_WIN32_WINNT=0x601;NDEBUG;BIGBASEV2_DIST;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..\vendor\directx\Inc;..\vendor\luac;..\vendor\sol2\include;..\vendor\json\single_include;..\vendor\MinHook\include;..\vendor\ImGui;..\vendor\ImGui\backends;..\vendor\StackWalker\Main\StackWalker;src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>..\bin\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <ImportLibrary>..\bin\Dist\Foxy.lib</ImportLibrary>
+      <GenerateMapFile>true</GenerateMapFile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Auth\Auth.hpp" />
+    <ClInclude Include="src\Auth\Encryption.hpp" />
+    <ClInclude Include="src\Auth\XorStr.hpp" />
+    <ClInclude Include="src\Config\Config.hpp" />
+    <ClInclude Include="src\Config\ScriptHookVConfig.hpp" />
+    <ClInclude Include="src\Core\Core.hpp" />
+    <ClInclude Include="src\Core\Logger.hpp" />
+    <ClInclude Include="src\DirectX\DXTK\Types.hpp" />
+    <ClInclude Include="src\DirectX\Fonts\HeaderFontData.hpp" />
+    <ClInclude Include="src\DirectX\Fonts\IconFontData.hpp" />
+    <ClInclude Include="src\DirectX\Renderer\Renderer.hpp" />
+    <ClInclude Include="src\DirectX\Renderer\StateSaver.hpp" />
+    <ClInclude Include="src\Discord\Library\include\discord_register.h" />
+    <ClInclude Include="src\Discord\Library\include\discord_rpc.h" />
+    <ClInclude Include="src\Discord\RPC.hpp" />
+    <ClInclude Include="src\Exceptions\ExceptionHandler.hpp" />
+    <ClInclude Include="src\Features\Exploit.hpp" />
+    <ClInclude Include="src\Features\Features.hpp" />
+    <ClInclude Include="src\Features\Lua\ImGui\Lua.hpp" />
+    <ClInclude Include="src\Features\Lua\Lua.hpp" />
+    <ClInclude Include="src\Features\YSC\YSCFile.hpp" />
+    <ClInclude Include="src\Features\YSC\YSCLoader.hpp" />
+    <ClInclude Include="src\Fibers\DXFiberMgr.hpp" />
+    <ClInclude Include="src\Fibers\Fiber.hpp" />
+    <ClInclude Include="src\Fibers\FiberMgr.hpp" />
+    <ClInclude Include="src\Fibers\FiberPool.hpp" />
+    <ClInclude Include="src\Fibers\Threading.hpp" />
+    <ClInclude Include="src\HDE\hde32.h" />
+    <ClInclude Include="src\HDE\hde64.h" />
+    <ClInclude Include="src\HDE\pstdint.h" />
+    <ClInclude Include="src\HDE\table32.h" />
+    <ClInclude Include="src\HDE\table64.h" />
+    <ClInclude Include="src\HTTP\HTTPRequest.hpp" />
+    <ClInclude Include="src\Hooking\Hooking.hpp" />
+    <ClInclude Include="src\Hooking\HookingMethods\DetourHelper.hpp" />
+    <ClInclude Include="src\Hooking\HookingMethods\ScriptHook.hpp" />
+    <ClInclude Include="src\Hooking\HookingMethods\VMTHook.hpp" />
+    <ClInclude Include="src\Hooking\Hooks\CheckNode.hpp" />
+    <ClInclude Include="src\Hooking\Hooks\Natives\NativeHooking.hpp" />
+    <ClInclude Include="src\Hooking\Hooks\Natives\NativesDetours.hpp" />
+    <ClInclude Include="src\Hooking\Hooks\ReceiveCloneData.hpp" />
+    <ClInclude Include="src\HTTP\HTTPSRequest.hpp" />
+    <ClInclude Include="src\Memory\BytePatch.hpp" />
+    <ClInclude Include="src\Memory\Mem.hpp" />
+    <ClInclude Include="src\Memory\Memory.hpp" />
+    <ClInclude Include="src\Memory\Module.hpp" />
+    <ClInclude Include="src\Memory\Patterns\Pointers.hpp" />
+    <ClInclude Include="src\Memory\Pointer.hpp" />
+    <ClInclude Include="src\Memory\ScriptPatch.hpp" />
+    <ClInclude Include="src\Memory\ScriptPatcher.hpp" />
+    <ClInclude Include="src\Memory\Signature.hpp" />
+    <ClInclude Include="src\Memory\PointerManager.hpp" />
+    <ClInclude Include="src\Memory\Util.hpp" />
+    <ClInclude Include="src\Pch\Common.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\AtArray.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\atMap.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\atPool.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Base.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\BitBuffer.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\BlockMap.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CAimingInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CAmmoInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CBaseModelInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CEntity.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CEventNetwork.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CEventNetworkTextMessageReceived.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CGameInvite.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CItemInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CJoinRequestContext.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CMsgJoinResponse.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CMsgTextMessage.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CNavigation.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CNetGamePlayer.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CNetGamePlayerDataMsg.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CNetworkIncrementStatEvent.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CNetworkPlayerMgr.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CNonPhysicalPlayerData.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CPed.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CPedBoneInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CPedFactory.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CPedIntelligence.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CPedInventory.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CPedModelInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CPedWeaponManager.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CPhysical.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CPlayerGamerDataNode.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CPlayerInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CScriptedGameEvent.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CStreaming.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CTextInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CVehicleModelInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\CWeaponInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\ClanData.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Colors.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\DataNode.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Enums.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\GFxLoader.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\GFxLoaderData.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\GFxLoaderDataState.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\GFxLoaderState.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Natives\Invoker\NativeContext.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Script\Engine.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Script\Thread.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\scrOpcode.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Friends.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\GamerHandle.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\GamerInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\grcLockedTexture.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\grcRenderTarget.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\PeerInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\grcTexture.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\grcTextureFactory.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\pgArray.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\pgDictionaryPool.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\grcTextureStore.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\HashKeys.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\HashTable.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\JSONSerialiser.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Joaat.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Natives\Crossmap.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Natives\Invoker\Invoker.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Natives\NativeDefines.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Natives\Natives.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\NetGameEvent.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\NetObject.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\NetPlayer.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\NetPlayerMgrBase.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\NetSocketAddress.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\NetTunnel.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Network.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\NonPhysicalPlayerDataBase.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\pgDictionary.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\pgObjectArray.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\pgPtr.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\pgStreamableBase.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\pgStreamManager.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Pools.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Rage.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\RemoteGamerInfoMsg.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\ReplayInterface.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\RTTI.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\ScrHandlers.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\ScrProgram.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\ScrThread.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\scrValue.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\SessionInfo.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\streamingDataEntry.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\streamingListEntry.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\strStreamingModule.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\strStreamingModuleMgr.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\SyncTree.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\SysMemAllocator.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\sysUseAllocator.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\TlsContext.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\UI3DScenes.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Vectors.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\Vehicle.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\WebConstuction.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\eNetMessage.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\fwDrawData.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\fwEntity.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\fwExtensible.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\fwuiInputMessageBase.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\rlMetric.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\scrNativeCallContext.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\scrNativeRegistration.hpp" />
+    <ClInclude Include="src\R.A.G.Engine\scrNativeRegistrationTable.hpp" />
+    <ClInclude Include="src\ScriptHookV\ScriptHookV.hpp" />
+    <ClInclude Include="src\ScriptHookV\ScriptHookVLoader.hpp" />
+    <ClInclude Include="src\Stack\Disassmbler.hpp" />
+    <ClInclude Include="src\STB\STBImage.hpp" />
+    <ClInclude Include="src\STB\STBImageWrite.hpp" />
+    <ClInclude Include="src\Script\Main\MainScript.hpp" />
+    <ClInclude Include="src\Stack\CallSpoof.hpp" />
+    <ClInclude Include="src\UI\Abstracts\AbstractOpt.hpp" />
+    <ClInclude Include="src\UI\Abstracts\AbstractSub.hpp" />
+    <ClInclude Include="src\UI\Information\DoubleLine.hpp" />
+    <ClInclude Include="src\UI\Information\FormattedString.hpp" />
+    <ClInclude Include="src\UI\Information\Box.hpp" />
+    <ClInclude Include="src\UI\Information\Line.hpp" />
+    <ClInclude Include="src\UI\Information\SingleLine.hpp" />
+    <ClInclude Include="src\UI\Manager\DXUiManager.hpp" />
+    <ClInclude Include="src\UI\Notify\Notify.hpp" />
+    <ClInclude Include="src\UI\Options\BoolOpt.hpp" />
+    <ClInclude Include="src\UI\Options\BreakOpt.hpp" />
+    <ClInclude Include="src\UI\Options\ColorOpt.hpp" />
+    <ClInclude Include="src\UI\Options\IconOpt.hpp" />
+    <ClInclude Include="src\UI\Options\NumBoolOpt.hpp" />
+    <ClInclude Include="src\UI\Options\NumOpt.hpp" />
+    <ClInclude Include="src\UI\Options\Opt.hpp" />
+    <ClInclude Include="src\UI\Options\RegularOpt.hpp" />
+    <ClInclude Include="src\UI\Options\SubOpt.hpp" />
+    <ClInclude Include="src\UI\Options\VecBoolOpt.hpp" />
+    <ClInclude Include="src\UI\Options\VecOpt.hpp" />
+    <ClInclude Include="src\UI\SmoothScroll\SmoothScroll.hpp" />
+    <ClInclude Include="src\UI\StrStream\StringStream.hpp" />
+    <ClInclude Include="src\UI\Subs\Sub.hpp" />
+    <ClInclude Include="src\UI\Timer\Timer.hpp" />
+    <ClInclude Include="src\Util\Chat.hpp" />
+    <ClInclude Include="src\Util\Globals.hpp" />
+    <ClInclude Include="src\Util\Packet.hpp" />
+    <ClInclude Include="src\Util\Protections.hpp" />
+    <ClInclude Include="src\Util\Util.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Config\ScriptHookVConfig.cpp" />
+    <ClCompile Include="src\HDE\hde32.c" />
+    <ClCompile Include="src\HDE\hde64.c" />
+    <ClCompile Include="src\Hooking\Hooks\GetProcAddress.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\ReceiveCloneSync.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\VMTs\DeviceContext\CopyResource.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\VMTs\Swapchain\GetBuffer.cpp" />
+    <ClCompile Include="src\Auth\Auth.cpp" />
+    <ClCompile Include="src\Config\Config.cpp" />
+    <ClCompile Include="src\Core\Core.cpp" />
+    <ClCompile Include="src\DirectX\Renderer\Renderer.cpp" />
+    <ClCompile Include="src\Discord\RPC.cpp" />
+    <ClCompile Include="src\Exceptions\ExceptionHandler.cpp" />
+    <ClCompile Include="src\Features\Features.cpp" />
+    <ClCompile Include="src\Features\Lua\Lua.cpp" />
+    <ClCompile Include="src\Fibers\DXFiberMgr.cpp" />
+    <ClCompile Include="src\Fibers\Fiber.cpp" />
+    <ClCompile Include="src\Fibers\FiberMgr.cpp" />
+    <ClCompile Include="src\Fibers\FiberPool.cpp" />
+    <ClCompile Include="src\Hooking\Hooking.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\ConstructAddGamerToSessionCmd.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\ConstructJoinRequest.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\ConsturctPlayerDataMsg.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\ConvertThreadToFIber.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\GetNetworkEventData.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\GetPeerAddress.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\HandleJoinRequest.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\HasIntervalElapsed.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\HasRosPrivilege.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\MultiplayerChatFIlter.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\NetConMgrChannelDispatchEvent.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\NetTextMsgConstructor.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\ProcessPackedEvents.hpp" />
+    <ClCompile Include="src\Hooking\Hooks\QueueDependency.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\ScriptVirtualMachine.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\StartMatchmakingFindSessions.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\NetworkPlayerMgrInitialize.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\NetworkPlayerMgrShutdown.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\VMTs\Swapchain\Present.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\VMTs\Swapchain\ResizeBuffers.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\WritePlayerGameStateDataNode.cpp" />
+    <ClCompile Include="src\Hooking\Hooks\WritePlayerGamerDataNode.cpp" />
+    <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Memory\Patterns\Pointers.cpp" />
+    <ClCompile Include="src\Pch\Common.cpp" />
+    <ClCompile Include="src\R.A.G.Engine\Natives\Invoker\Invoker.cpp" />
+    <ClCompile Include="src\ScriptHookV\ScriptHookV.cpp" />
+    <ClCompile Include="src\Script\Main\MainScript.cpp" />
+    <ClCompile Include="src\UI\Manager\DXUiManager.cpp" />
+    <ClCompile Include="src\Util\Util.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Masm Include="src\Stack\SpooferAssembly.asm" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\vendor\directx\directx.vcxproj">
+      <Project>{1803B512-84E2-33AE-8DFA-BE84F9589A0F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vendor\luac\luac.vcxproj">
+      <Project>{0A479A7C-F67D-9B0D-9F6A-81108B80170F}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vendor\MinHook\MinHook.vcxproj">
+      <Project>{1A77E127-8656-60C3-8F6E-EB99FBCCC624}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vendor\ImGui\ImGui.vcxproj">
+      <Project>{C0FF640D-2C14-8DBE-F595-301E616989EF}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\vendor\StackWalker\StackWalker.vcxproj">
+      <Project>{21FD7E7C-8DB2-F771-16A7-F148825BEE75}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="src\Discord\Library\lib\discord-rpc.lib" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Util\Tunnel.hpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\masm.targets" />
+  </ImportGroup>
+</Project>

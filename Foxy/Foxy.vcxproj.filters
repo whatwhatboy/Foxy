@@ -1,0 +1,933 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{df919ef4-d17d-46b7-b4fc-cb3808a4ff82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Auth">
+      <UniqueIdentifier>{37B5827C-23EC-830D-CCD8-6910B8EEFF0E}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Config">
+      <UniqueIdentifier>{5B583FAC-47FA-6982-30B5-7DD61CF6F0D2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core">
+      <UniqueIdentifier>{2EB4837C-1AEB-840D-C3D7-6A10AFED000F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DirectX">
+      <UniqueIdentifier>{D86A6D73-444A-EC0E-4D62-77E5B9C05270}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DirectX\Fonts">
+      <UniqueIdentifier>{11174C94-7DD7-C7CA-4612-1148B2910CA7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DirectX\Renderer">
+      <UniqueIdentifier>{7E619ADD-6A5A-B92F-938C-9EB47FE4983B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\DirectX\DXTK">
+      <UniqueIdentifier>{aa940c42-6bbb-4398-86d6-e82048ae7f81}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Discord">
+      <UniqueIdentifier>{6D9D7E73-D97C-FD0E-E294-88E54EF36370}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Discord\Library">
+      <UniqueIdentifier>{5158606d-afda-4b1e-b1ea-69c58d5209db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Discord\Library\include">
+      <UniqueIdentifier>{2cb25d94-6af7-4b35-b68e-af0e67897995}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Discord\Library\lib">
+      <UniqueIdentifier>{2f71932e-88d4-46fc-a432-96e8748ac5a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Exceptions">
+      <UniqueIdentifier>{479CBBB0-3354-FDFD-9C5B-D659883298EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Features">
+      <UniqueIdentifier>{E411275F-D0DE-816A-F9F7-6F12E523B7F8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Features\Lua">
+      <UniqueIdentifier>{757C80DE-61DF-0F83-0A65-4839F6A6DB05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Features\Lua\ImGui">
+      <UniqueIdentifier>{5FB55395-4B99-14EB-B4F9-0E3EA0FCFE6C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Features\YSC">
+      <UniqueIdentifier>{42AF80DE-2E12-1083-D797-4839C3D9DB05}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Fibers">
+      <UniqueIdentifier>{A0A7CBB2-8C49-F688-7504-0ADD61457DD9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Hooking">
+      <UniqueIdentifier>{346B22B5-A04A-A150-A962-2C2715C107B2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Hooking\HookingMethods">
+      <UniqueIdentifier>{0687C0B3-F280-E905-DBED-7F16C7864F72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Hooking\Hooks">
+      <UniqueIdentifier>{8720D333-F3E0-4E6A-BC1B-98E7289B9346}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Hooking\Hooks\Natives">
+      <UniqueIdentifier>{50669A11-BCD2-550C-85C6-ED69F1F17774}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Hooking\Hooks\VMTs">
+      <UniqueIdentifier>{00883273-EC6B-F3C8-55CC-ED1B41CFDD4A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Hooking\Hooks\VMTs\Swapchain">
+      <UniqueIdentifier>{6DBC2C66-5977-1C12-022F-955CEEC866A2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Hooking\Hooks\VMTs\DeviceContext">
+      <UniqueIdentifier>{9b7d89b4-96f2-491a-aa29-c9ccc1c8d78a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\HTTP">
+      <UniqueIdentifier>{45FB857C-3132-870D-DA1E-6D10C634030F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory">
+      <UniqueIdentifier>{BE94DDC2-AA36-0899-93F1-1BED7F328FE9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Memory\Patterns">
+      <UniqueIdentifier>{5EEE7AE0-CA79-E8A4-D38A-6B993F9544A5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Pch">
+      <UniqueIdentifier>{6014880B-CC1D-887C-5599-9E7CC1A1937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\R.A.G.Engine">
+      <UniqueIdentifier>{FF1E78F6-EB81-079B-9407-40518049D31D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\R.A.G.Engine\Natives">
+      <UniqueIdentifier>{C85CB24A-B4EB-3B14-5D0A-500F49784CBA}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\R.A.G.Engine\Natives\Invoker">
+      <UniqueIdentifier>{758025F3-613B-159F-0AF3-8DE9F68C5F2F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\R.A.G.Engine\Script">
+      <UniqueIdentifier>{6388CAF6-CFE9-A704-5857-EEB6C4B7DEC3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Script">
+      <UniqueIdentifier>{9AFBBAD0-869D-E5A6-6F58-F9FA5B996CF7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Script\Main">
+      <UniqueIdentifier>{4EAF883E-BA64-0134-4359-FB0AAF0DF837}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\ScriptHookV">
+      <UniqueIdentifier>{8fa38de1-c894-4fea-8970-62fd6633386c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Stack">
+      <UniqueIdentifier>{BB371E0E-274C-46BF-F0CD-E91E5CA142F0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\STB">
+      <UniqueIdentifier>{0E1F880B-7A28-887C-03A4-9E7C6FAC937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\UI">
+      <UniqueIdentifier>{83755900-6F01-880B-D8AF-880BC45A880B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\UI\Abstracts">
+      <UniqueIdentifier>{19CCE20E-052F-72B3-AEB4-AA699AF63D36}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\UI\Manager">
+      <UniqueIdentifier>{AD844836-993C-8A83-0244-63DFEE1A2574}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\UI\Notify">
+      <UniqueIdentifier>{CB5431DE-37BF-E554-80FD-96FAECA6C3A9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\UI\Options">
+      <UniqueIdentifier>{DE78ABF3-CA30-ED40-3338-C69C1F0F8831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\UI\SmoothScroll">
+      <UniqueIdentifier>{1B65E34D-87F0-5012-9001-D406FC0BAD12}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\UI\StrStream">
+      <UniqueIdentifier>{F7C57C42-E328-0CE7-8CAE-449D78F0D769}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\UI\Subs">
+      <UniqueIdentifier>{4F61A040-BB40-1FDC-C458-AAB230B7853D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\UI\Timer">
+      <UniqueIdentifier>{933CB854-7F09-1360-A822-0108944E48EE}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\UI\Information">
+      <UniqueIdentifier>{d3205d4d-129a-4935-9dc2-8e9cbe002abf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Util">
+      <UniqueIdentifier>{23A78D7C-0FDE-8E0D-B8CA-7410A4E00A0F}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\HDE">
+      <UniqueIdentifier>{9dbe69cf-905a-42ed-a28e-848e764386b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Auth\Auth.hpp">
+      <Filter>src\Auth</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Auth\XorStr.hpp">
+      <Filter>src\Auth</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Config\Config.hpp">
+      <Filter>src\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Core.hpp">
+      <Filter>src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Logger.hpp">
+      <Filter>src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DirectX\Fonts\HeaderFontData.hpp">
+      <Filter>src\DirectX\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DirectX\Fonts\IconFontData.hpp">
+      <Filter>src\DirectX\Fonts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DirectX\Renderer\Renderer.hpp">
+      <Filter>src\DirectX\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Discord\RPC.hpp">
+      <Filter>src\Discord</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Exceptions\ExceptionHandler.hpp">
+      <Filter>src\Exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Features\Features.hpp">
+      <Filter>src\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Features\Lua\ImGui\Lua.hpp">
+      <Filter>src\Features\Lua\ImGui</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Features\Lua\Lua.hpp">
+      <Filter>src\Features\Lua</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Features\YSC\YSCFile.hpp">
+      <Filter>src\Features\YSC</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Features\YSC\YSCLoader.hpp">
+      <Filter>src\Features\YSC</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fibers\DXFiberMgr.hpp">
+      <Filter>src\Fibers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fibers\Fiber.hpp">
+      <Filter>src\Fibers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fibers\FiberMgr.hpp">
+      <Filter>src\Fibers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fibers\FiberPool.hpp">
+      <Filter>src\Fibers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Fibers\Threading.hpp">
+      <Filter>src\Fibers</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTP\HTTPRequest.hpp">
+      <Filter>src\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HTTP\HTTPSRequest.hpp">
+      <Filter>src\HTTP</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hooking\Hooking.hpp">
+      <Filter>src\Hooking</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hooking\HookingMethods\DetourHelper.hpp">
+      <Filter>src\Hooking\HookingMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hooking\HookingMethods\ScriptHook.hpp">
+      <Filter>src\Hooking\HookingMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hooking\HookingMethods\VMTHook.hpp">
+      <Filter>src\Hooking\HookingMethods</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hooking\Hooks\CheckNode.hpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hooking\Hooks\Natives\NativeHooking.hpp">
+      <Filter>src\Hooking\Hooks\Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hooking\Hooks\Natives\NativesDetours.hpp">
+      <Filter>src\Hooking\Hooks\Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Hooking\Hooks\ReceiveCloneData.hpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memory\BytePatch.hpp">
+      <Filter>src\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memory\Mem.hpp">
+      <Filter>src\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memory\Memory.hpp">
+      <Filter>src\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memory\Module.hpp">
+      <Filter>src\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memory\Patterns\Pointers.hpp">
+      <Filter>src\Memory\Patterns</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memory\Pointer.hpp">
+      <Filter>src\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memory\PointerManager.hpp">
+      <Filter>src\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memory\ScriptPatch.hpp">
+      <Filter>src\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memory\ScriptPatcher.hpp">
+      <Filter>src\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memory\Signature.hpp">
+      <Filter>src\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Memory\Util.hpp">
+      <Filter>src\Memory</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Pch\Common.hpp">
+      <Filter>src\Pch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\AtArray.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Base.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\BitBuffer.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\BlockMap.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CAimingInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CAmmoInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CBaseModelInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CEntity.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CEventNetwork.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CEventNetworkTextMessageReceived.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CGameInvite.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CItemInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CJoinRequestContext.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CMsgJoinResponse.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CMsgTextMessage.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CNavigation.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CNetGamePlayer.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CNetGamePlayerDataMsg.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CNetworkIncrementStatEvent.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CNetworkPlayerMgr.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CNonPhysicalPlayerData.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CPed.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CPedBoneInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CPedFactory.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CPedIntelligence.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CPedInventory.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CPedModelInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CPedWeaponManager.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CPhysical.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CPlayerGamerDataNode.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CPlayerInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CScriptedGameEvent.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CStreaming.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CTextInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CVehicleModelInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\CWeaponInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\ClanData.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Colors.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\DataNode.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Enums.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Friends.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\GFxLoader.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\GFxLoaderData.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\GFxLoaderDataState.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\GFxLoaderState.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\GamerHandle.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\GamerInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\HashKeys.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\HashTable.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\JSONSerialiser.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Joaat.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Natives\Crossmap.hpp">
+      <Filter>src\R.A.G.Engine\Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Natives\Invoker\Invoker.hpp">
+      <Filter>src\R.A.G.Engine\Natives\Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Natives\Invoker\NativeContext.hpp">
+      <Filter>src\R.A.G.Engine\Natives\Invoker</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Natives\NativeDefines.hpp">
+      <Filter>src\R.A.G.Engine\Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Natives\Natives.hpp">
+      <Filter>src\R.A.G.Engine\Natives</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\NetGameEvent.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\NetObject.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\NetPlayer.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\NetPlayerMgrBase.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\NetSocketAddress.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\NetTunnel.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Network.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\NonPhysicalPlayerDataBase.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\PeerInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Pools.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\RTTI.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Rage.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\RemoteGamerInfoMsg.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\ReplayInterface.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\ScrHandlers.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\ScrProgram.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\ScrThread.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Script\Engine.hpp">
+      <Filter>src\R.A.G.Engine\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Script\Thread.hpp">
+      <Filter>src\R.A.G.Engine\Script</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\SessionInfo.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\SyncTree.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\SysMemAllocator.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\TlsContext.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\UI3DScenes.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Vectors.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\Vehicle.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\WebConstuction.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\atMap.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\atPool.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\eNetMessage.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\fwDrawData.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\fwEntity.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\fwExtensible.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\fwuiInputMessageBase.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\grcLockedTexture.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\grcRenderTarget.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\grcTexture.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\grcTextureFactory.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\grcTextureStore.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\pgArray.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\pgDictionary.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\pgDictionaryPool.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\pgObjectArray.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\pgPtr.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\pgStreamManager.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\pgStreamableBase.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\rlMetric.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\scrNativeCallContext.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\scrNativeRegistration.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\scrNativeRegistrationTable.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\scrOpcode.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\scrValue.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\strStreamingModule.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\strStreamingModuleMgr.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\streamingDataEntry.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\streamingListEntry.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\R.A.G.Engine\sysUseAllocator.hpp">
+      <Filter>src\R.A.G.Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="src\STB\STBImage.hpp">
+      <Filter>src\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\STB\STBImageWrite.hpp">
+      <Filter>src\STB</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Script\Main\MainScript.hpp">
+      <Filter>src\Script\Main</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Stack\CallSpoof.hpp">
+      <Filter>src\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Abstracts\AbstractOpt.hpp">
+      <Filter>src\UI\Abstracts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Abstracts\AbstractSub.hpp">
+      <Filter>src\UI\Abstracts</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Manager\DXUiManager.hpp">
+      <Filter>src\UI\Manager</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Notify\Notify.hpp">
+      <Filter>src\UI\Notify</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Options\BoolOpt.hpp">
+      <Filter>src\UI\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Options\BreakOpt.hpp">
+      <Filter>src\UI\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Options\ColorOpt.hpp">
+      <Filter>src\UI\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Options\IconOpt.hpp">
+      <Filter>src\UI\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Options\NumBoolOpt.hpp">
+      <Filter>src\UI\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Options\NumOpt.hpp">
+      <Filter>src\UI\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Options\Opt.hpp">
+      <Filter>src\UI\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Options\RegularOpt.hpp">
+      <Filter>src\UI\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Options\SubOpt.hpp">
+      <Filter>src\UI\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Options\VecBoolOpt.hpp">
+      <Filter>src\UI\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Options\VecOpt.hpp">
+      <Filter>src\UI\Options</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\SmoothScroll\SmoothScroll.hpp">
+      <Filter>src\UI\SmoothScroll</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\StrStream\StringStream.hpp">
+      <Filter>src\UI\StrStream</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Subs\Sub.hpp">
+      <Filter>src\UI\Subs</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Timer\Timer.hpp">
+      <Filter>src\UI\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Util\Chat.hpp">
+      <Filter>src\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Util\Globals.hpp">
+      <Filter>src\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Util\Packet.hpp">
+      <Filter>src\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Util\Protections.hpp">
+      <Filter>src\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Util\Util.hpp">
+      <Filter>src\Util</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Discord\Library\include\discord_rpc.h">
+      <Filter>src\Discord\Library\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Discord\Library\include\discord_register.h">
+      <Filter>src\Discord\Library\include</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Features\Exploit.hpp">
+      <Filter>src\Features</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Stack\Disassmbler.hpp">
+      <Filter>src\Stack</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScriptHookV\ScriptHookV.hpp">
+      <Filter>src\ScriptHookV</Filter>
+    </ClInclude>
+    <ClInclude Include="src\ScriptHookV\ScriptHookVLoader.hpp">
+      <Filter>src\ScriptHookV</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Config\ScriptHookVConfig.hpp">
+      <Filter>src\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Auth\Encryption.hpp">
+      <Filter>src\Auth</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Information\DoubleLine.hpp">
+      <Filter>src\UI\Information</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Information\Box.hpp">
+      <Filter>src\UI\Information</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Information\FormattedString.hpp">
+      <Filter>src\UI\Information</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Information\Line.hpp">
+      <Filter>src\UI\Information</Filter>
+    </ClInclude>
+    <ClInclude Include="src\UI\Information\SingleLine.hpp">
+      <Filter>src\UI\Information</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DirectX\Renderer\StateSaver.hpp">
+      <Filter>src\DirectX\DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DirectX\DXTK\Types.hpp">
+      <Filter>src\DirectX\DXTK</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HDE\hde32.h">
+      <Filter>src\HDE</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HDE\hde64.h">
+      <Filter>src\HDE</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HDE\pstdint.h">
+      <Filter>src\HDE</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HDE\table32.h">
+      <Filter>src\HDE</Filter>
+    </ClInclude>
+    <ClInclude Include="src\HDE\table64.h">
+      <Filter>src\HDE</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Auth\Auth.cpp">
+      <Filter>src\Auth</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Config\Config.cpp">
+      <Filter>src\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Core.cpp">
+      <Filter>src\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DirectX\Renderer\Renderer.cpp">
+      <Filter>src\DirectX\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Discord\RPC.cpp">
+      <Filter>src\Discord</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Exceptions\ExceptionHandler.cpp">
+      <Filter>src\Exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Features\Features.cpp">
+      <Filter>src\Features</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Features\Lua\Lua.cpp">
+      <Filter>src\Features\Lua</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Fibers\DXFiberMgr.cpp">
+      <Filter>src\Fibers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Fibers\Fiber.cpp">
+      <Filter>src\Fibers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Fibers\FiberMgr.cpp">
+      <Filter>src\Fibers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Fibers\FiberPool.cpp">
+      <Filter>src\Fibers</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooking.cpp">
+      <Filter>src\Hooking</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\ConstructAddGamerToSessionCmd.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\ConstructJoinRequest.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\ConsturctPlayerDataMsg.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\ConvertThreadToFIber.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\GetNetworkEventData.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\GetPeerAddress.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\HandleJoinRequest.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\HasIntervalElapsed.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\HasRosPrivilege.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\MultiplayerChatFIlter.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\NetConMgrChannelDispatchEvent.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\NetTextMsgConstructor.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\NetworkPlayerMgrInitialize.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\NetworkPlayerMgrShutdown.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\QueueDependency.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\ScriptVirtualMachine.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\StartMatchmakingFindSessions.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\VMTs\Swapchain\Present.cpp">
+      <Filter>src\Hooking\Hooks\VMTs\Swapchain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\VMTs\Swapchain\ResizeBuffers.cpp">
+      <Filter>src\Hooking\Hooks\VMTs\Swapchain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\WritePlayerGameStateDataNode.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\WritePlayerGamerDataNode.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Memory\Patterns\Pointers.cpp">
+      <Filter>src\Memory\Patterns</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pch\Common.cpp">
+      <Filter>src\Pch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\R.A.G.Engine\Natives\Invoker\Invoker.cpp">
+      <Filter>src\R.A.G.Engine\Natives\Invoker</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Script\Main\MainScript.cpp">
+      <Filter>src\Script\Main</Filter>
+    </ClCompile>
+    <ClCompile Include="src\UI\Manager\DXUiManager.cpp">
+      <Filter>src\UI\Manager</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Util\Util.cpp">
+      <Filter>src\Util</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\ProcessPackedEvents.hpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\VMTs\Swapchain\GetBuffer.cpp">
+      <Filter>src\Hooking\Hooks\VMTs\Swapchain</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\VMTs\DeviceContext\CopyResource.cpp">
+      <Filter>src\Hooking\Hooks\VMTs\DeviceContext</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\ReceiveCloneSync.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\ScriptHookV\ScriptHookV.cpp">
+      <Filter>src\ScriptHookV</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Config\ScriptHookVConfig.cpp">
+      <Filter>src\Config</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Hooking\Hooks\GetProcAddress.cpp">
+      <Filter>src\Hooking\Hooks</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HDE\hde32.c">
+      <Filter>src\HDE</Filter>
+    </ClCompile>
+    <ClCompile Include="src\HDE\hde64.c">
+      <Filter>src\HDE</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Masm Include="src\Stack\SpooferAssembly.asm">
+      <Filter>src\Stack</Filter>
+    </Masm>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="src\Discord\Library\lib\discord-rpc.lib">
+      <Filter>src\Discord\Library\lib</Filter>
+    </Library>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\Util\Tunnel.hpp">
+      <Filter>src\Util</Filter>
+    </None>
+  </ItemGroup>
+</Project>

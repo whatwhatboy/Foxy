@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{66f8b86f-12f7-4ab2-9f1a-fe4f43c51ef3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Core">
+      <UniqueIdentifier>{5f417b0a-ebf7-4490-bd39-51d2c22236cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Pch">
+      <UniqueIdentifier>{f6bc535d-d33f-4c2d-9511-fd536f3e27df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Json">
+      <UniqueIdentifier>{b65182d6-abf8-4060-9783-63c82a1775b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Config">
+      <UniqueIdentifier>{64bcf703-15b0-49f1-a244-c733ec2399ea}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\Main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Pch\Common.cpp">
+      <Filter>src\Pch</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Core\Core.cpp">
+      <Filter>src\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Config\Config.cpp">
+      <Filter>src\Config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Pch\Common.hpp">
+      <Filter>src\Pch</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Core\Core.hpp">
+      <Filter>src\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Json\Json.hpp">
+      <Filter>src\Json</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Config\Config.hpp">
+      <Filter>src\Config</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Exports\Exports.hpp" />
+  </ItemGroup>
+</Project>
