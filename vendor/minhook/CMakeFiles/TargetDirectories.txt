@@ -1,0 +1,4 @@
+D:/Sources/Current Projects/Foxy/Foxy 1.XX.X/vendor/minhook/CMakeFiles/minhook.dir
+D:/Sources/Current Projects/Foxy/Foxy 1.XX.X/vendor/minhook/CMakeFiles/INSTALL.dir
+D:/Sources/Current Projects/Foxy/Foxy 1.XX.X/vendor/minhook/CMakeFiles/ALL_BUILD.dir
+D:/Sources/Current Projects/Foxy/Foxy 1.XX.X/vendor/minhook/CMakeFiles/ZERO_CHECK.dir
